@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+<title>SeaTac Rapier School</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/fp.css" />
+<link rel="stylesheet" href="css/nav.css" />    
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+<style>
+    fieldset {
+      border: 0;    
+    }
+    label {
+      font-family: serif;
+      font-size: 1.1em;
+      color: white;
+      display: block;
+      margin: 30px 0 0 0;
+    }
+    .overflow {
+      height: 200px;
+    }   
+    #panel, #flip {
+      font-family: serif;
+      font-size: 1.1em;
+      color: white;
+      padding: 5px;
+      text-align: center;
+      border: solid 1px #c3c3c3;
+    }
+    #panel {
+      padding-top: 20px;
+      padding-bottom: 120px;
+      text-align: left;
+      display: none;
+    }
+    #adult{ 
+        float: left;
+        width: 50%;
+    }
+    #youth{
+        float: right;
+        width: 50%;
+    }
+    option.equip{
+        font-family: serif;
+    }
+
+  /* Dai added these lines of code to display grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 32% 32% 32%; 
+    /* grid-template-rows: 300px 175px; */
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 20px; */
+    grid-gap: 10px; /*for row and column*/
+  }
+
+  .grid-item {
+    /* border: 1px solid white; */
+    text-align: center;
+  }
+</style>
+</head>
+    
+<body>
+<header>
+      <div class="logo">
+      <a href="index.html"><img class="logo" src="images/logo.png" alt="Home"></a>
+      </div>
+      <h1>SeaTac Rapier School</h1>
+    
+  <nav id="cssmenu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li> 
+    </ul>
+  </nav>
+
+</header> 
+           
+     
+<!-- A wrapper can be used to contain the web page -->
+<div class="wrapper">
+     <!-- Start left column -->
+       <div id="tabs" style="background: #000;">
+         <h2 class="page-id">Services</h2>
+           <ul id="services">
+                <li class="change"><a href="#tabs-1">Enrollment</a></li>
+                <li class="change"><a href="#tabs-2">Classes</a></li>
+                <li class="change"><a href="#tabs-3">Training</a></li>
+                <li class="change"><a href="#tabs-4">Equipment</a></li>
+           </ul>
+           
+           <div id="tabs-1">
+               <p>Enrollment in our rapier school is completed via the SeaTac Community Center on a quarterly basis. Quarterly tuition is $45.</p>
+               
+           </div>
+
+           <div id="tabs-2">
+               <p>Our class is held on Wednesday evenings from 7pm to 9:30pm. The first hour is focused on stretching, strengthening, and drilling of fundamentals of footwork and bladework. The material of the classes is customized to the attendees, and new fencers receive one-on-one instruction from our teacher or an advanced student.</p>
+               <p>The remainder of the class is dedicated to sparring in which intermediate and advanced students learn and practice through full-speed high-intensity combat.</p>
+               
+                   <div id="flip">Class Options</div>
+                   <div id="panel">
+
+                        <div id="adult">
+                         <ul>
+                           <li>Adult(18+) Beginning</li>
+                           <li>Adult Intermediate</li>
+                           <li>Adult Advanced</li>
+                         </ul>
+                        </div>
+
+                        <div id="youth">
+                          <ul>
+                           <li>Youth(10~17) Beginning</li>
+                           <li>Youth Intermediate</li>
+                           <li>Youth Advanced</li>
+                          </ul>
+                       </div> 
+                   </div>     
+           </div>
+
+           <div id="tabs-3">
+                 <p>A variety of training materials are available online to help our fencers advance. The Black Tiger Rapier YouTube channel has a variety of introductory and advanced techniques presented: </p>
+              <div class="grid-container">
+                  <div class="card grid-item">
+                      <a data-fancybox href="https://www.youtube.com/embed/CHXPbgSxNaU">
+                        <img class="card-img-top img-fluid" src="http://i.ytimg.com/vi/CHXPbgSxNaU/hqdefault.jpg" alt="How To Control Measure with Joe Bricky"/>
+                      </a>
+                      <div class="card-body">
+                        <p class="card-text">How To Control Measure with Joe Bricky</p>
+                      </div>
+                  </div>
+
+                  <div class="card grid-item">
+                      <a data-fancybox href="https://www.youtube.com/embed/CxUy04WCi_E">
+                        <img class="card-img-top img-fluid" src="http://i.ytimg.com/vi/CxUy04WCi_E/hqdefault.jpg" alt="A Common stance"/>
+                      </a>
+                      <div class="card-body">
+                        <p class="card-text">A Common stance</p>
+                      </div>
+                  </div>
+                  
+                  <div class="card grid-item">
+                      <a data-fancybox href="https://www.youtube.com/embed/tRryj8gqKa8">
+                        <img class="card-img-top img-fluid" src="http://i.ytimg.com/vi/tRryj8gqKa8/hqdefault.jpg" alt="Key to the Cross Parry"/>
+                      </a>
+                      <div class="card-body">
+                        <p class="card-text">Watch The Feet</p>
+                      </div>
+                  </div>
+              </div>
+           </div>
+         
+           
+           <div id="tabs-4">
+               <p>We have loaner equipment available for new members. As students advance and want to start participating in tournaments and events outside of the school, they can begin purchasing their own equipment.</p>
+               <p>The most important purchase is a sword. <a href="https://castillearmory.com/" target="_blank" id="equip" >Castille Armory </a>is a good choice for top-quality weapons. In addition, a standard 3-weapon fencing mask and gorget are required to spar.</p>
+               <form>
+                    <fieldset>
+                        <label for="armor">Select an armor</label>
+                        <select name="armor" id="armor">
+                          <option class="equip" selected="selected">Hood</option>
+                          <option class="equip">Fencing Jacket</option>
+                          <option class="equip">Fighting Cape</option>
+                          <option class="equip">Cut and Thrust Hard Shell Hood</option>
+                        </select>
+
+                        <label for="blade">Select a blade</label>
+                        <select name="blade" id="blade">
+                          <option class="equip" selected="selected">Italian Foil Blade</option>
+                          <option class="equip">Musketeer 30in. blade</option>
+                          <option class="equip">ZWA Rapier Blade</option>
+                          <option class="equip">ZWA Schlager (AKA Mensur)</option>
+                        </select>
+
+                        <label for="sword">Select a sword</label>
+                        <select name="sword" id="sword">
+                          <option class="equip" selected="selected">DG2 Graves Spanish Rapier-SCA</option>
+                          <option class="equip">R_18 Catalano Saber-SCA</option>
+                          <option class="equip">MF-3 Mensur Saber-SCA</option>
+                          <option class="equip">R6 Swept Hilt Design Rapier-SCA</option>
+                        </select>
+                    </fieldset>
+               </form>
+           </div>
+
+        </div>
+         
+       
+                 
+     <footer>
+          SeaTac Rapier School | 13735 24th Ave S, SeaTac, WA 98168 | (206) 973-4680 <br />
+      <small>
+          &copy; 2018 by <a href="contact.php">Liyun Cecil</a>, All Rights Reserved ~ 
+          <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML ~</a> 
+          <a href="https://validator.w3.org/#validate_by_uri" target="_blank">Valid CSS</a><br />
+          <a href="disclaimer.html">Disclaimer</a>
+      </small>
+        
+  
+    </footer> 
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+
+<script>
+    $(function() {
+        $("#flip").click(function(){
+            $("#panel").slideToggle("slow");
+        });
+
+      });
+    $("li.change").hover(function(){
+        $(this).css("background-color", "black");
+
+      });
+</script>
+
+<script>
+  //  Set caption from card text
+  $('.card-deck a').fancybox({
+    caption : function( instance, item ) {
+      return $(this).parent().find('.card-text').html();
+    }
+  });
+</script>
+    
+<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+    
+  $( function() {
+    $( "#armor" ).selectmenu();
+    $( "#blade" ).selectmenu();
+    $( "#sword" ).selectmenu();
+  } );
+</script>
+</body>
+</html>
