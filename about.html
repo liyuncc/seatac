@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+<title>SeaTac Rapier School</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/fp.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    
+<!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.css">-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<style>
+    #button {
+        margin-left: 425px;
+    }
+    #hide, #show {
+        font-size: 1em;
+        font-family: serif;
+        
+        display: inline-block;
+        margin: 5px; /* space between buttons */        
+    }
+    
+</style>
+</head>
+    
+<body>
+   
+  <header>
+       <div class="logo">
+       <a href="index.html"><img class="logo" src="images/logo.png" alt="Home"></a>
+       </div>
+      
+       <h1>SeaTac Rapier School</h1>
+
+       <nav id="cssmenu">
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="services.html">Services</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact</a></li> 
+          </ul>
+        </nav>
+    </header> 
+           
+      
+<!-- A wrapper can be used to contain the web page -->
+<div class="wrapper">
+     
+       <article>
+           <h2 class="page-id">About Us</h2>
+           
+           <h2>Our Philosophy </h2> 
+           <p>The Black Tiger approach to historical fencing is to strive for mastery of the art. We measure our mastery by challenging ourselves and others in both competitive and friendly arenas. We seek to master fencing as a martial art not just a sport, and practice techniques based on how effective they would be in a real fight, not just based on what works within the rule set we're using. We look for ideas and inspiration in the works of the Renaissance fencing masters, but don't blindly imitate them. We also innovate techniques that were never described in the historical sources, if they prove effective in our sparring. </p>
+        </article>
+           
+        <article>
+           <h2>The Instructor</h2> 
+            
+               <p>Our classes are taught by Jason Prendergast, a three-time rapier champion of the SCA for the Pacific Northwest, Master of Defense, and fifth-rank Black Tiger. He was a student of Rob Childs, currently one of the world's top rapier fighters and the co-founder of the Black Tiger School. Jason teaches all levels and ages of students, with a focus on fitness, fundamentals, and competitive prowess. His students have won all of the biggest SCA rapier tournaments in the Pacific Northwest.</p>
+           
+               <div id="button"><button id="hide">Hide images</button><button id="show">Show images</button></div>
+               
+            <div id="instructor">
+                <figure>
+                    <img src="images/instructor.jpg"><figcaption>Instructor</figcaption>
+                </figure>
+               
+                <figure>
+                    <img src="images/v2.jpg"><figcaption>Instructor In Action 1</figcaption>
+                </figure>
+               
+                <figure>
+                    <img src="images/v3.jpg"><figcaption>Instructor In Action 2</figcaption>
+                </figure>
+           </div>
+         </article>
+    
+         <article>
+           <h2>Techniques Highlights</h2> 
+            
+               <p>Lemon drops gummies apple pie apple pie macaroon sugar plum. Cotton candy lollipop cupcake sugar plum. Dragée tootsie roll jelly beans jelly-o powder tart jelly beans powder. Donut cake tart lemon drops cookie cookie lemon drops halvah brownie.</p>
+               
+               
+               <div id="gallery">
+                   <figure>
+                    <img src="images/1.jpg"><figcaption>On Guard</figcaption>
+                   </figure>
+
+                   <figure>
+                    <img src="images/2.jpg"><figcaption>Retreat</figcaption>
+                   </figure>
+
+                   <figure>
+                    <img src="images/3.jpg"><figcaption>Advance</figcaption>
+                   </figure>
+
+                   <figure>
+                    <img src="images/4.jpg"><figcaption>Lunge</figcaption>
+                   </figure>
+
+                   <figure>
+                     <img src="images/5.jpg"><figcaption>Attack</figcaption>
+                   </figure>
+
+                   <figure>
+                    <img src="images/6.jpg"><figcaption>Attack and Defence</figcaption>
+                   </figure>
+                </div>
+        </article>
+        
+    
+        
+                 
+     <footer>
+          SeaTac Rapier School | 13735 24th Ave S, SeaTac, WA 98168 | (206) 973-4680 <br />
+      <small>
+          &copy; 2018 by <a href="contact.php">Liyun Cecil</a>, All Rights Reserved ~ 
+          <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML ~</a> 
+          <a href="https://validator.w3.org/#validate_by_uri" target="_blank">Valid CSS</a><br />
+          <a href="disclaimer.html">Disclaimer</a>
+      </small>
+    </footer> 
+    
+</div>
+    
+<!-- fancybox JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="jquery.fancybox.min.js"></script>
+    
+<script>
+$(function() {
+   
+    $("#hide").click(function() {
+           $("#instructor").hide("slow");
+      });
+
+    $("#show").click(function() {
+           $("#instructor").show("slow");
+      }); 
+  });
+</script>
+
+ 
+
+ 
+</body>
+    
+</html>

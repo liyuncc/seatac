@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+<title>SeaTac Rapier School</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/fp.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<link rel="stylesheet" href="css/lightbox.css" />
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    
+<!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.css">-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script scr="js/jquery.validate.js"></script>
+    
+<script>
+$(function() {
+  
+  $("contactForm").validate({
+      rules: {
+          firstname: "required",
+          lastname: "required",
+          email: {
+              required: true,
+              email: true
+          },
+          
+          messages: {
+              firtname: "Please enter your first name",
+              lastname: "Please enter your last name",
+              email: "Please enter your email"
+          },   
+      }
+
+  });
+ 
+  $("form").submit(function(){
+    alert("Message Sent!");
+  });
+});
+    
+</script>
+    
+</head>
+    
+<body>
+
+       <header>
+           <div class="logo">
+           <a href="index.html"><img class="logo" src="images/logo.png" alt="Home"></a>
+           </div>
+           <h1>SeaTac Rapier School</h1>
+         
+        <nav id="cssmenu">
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="services.html">Services</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact</a></li> 
+          </ul>
+        </nav>
+
+       </header> 
+           
+      <div class="wrapper">
+         <h2 class="page-id">Contact Us</h2>
+         <section id="contact">
+             
+            <h2>Questions? Let us know!</h2>
+
+            <form name="contact" action="success.html" style="color:white;" id="contactForm">
+<!--                <fieldset>-->
+                <label for="fname">First Name <span>(required)</span></label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name" required><br>
+
+                <label for="lname">Last Name <span>(required)</span></label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name" required><br>
+                    
+                <label for="email">Email <span>(required)</span></label><br>
+                <input type="email" id="email" name="email" placeholder="Your email" required><br>
+                
+                <label for="message">Your Message <span>(required)</span></label>
+<!--                <input type="text" id="message" name="message" placeholder="Your message"><br>-->
+                <textarea id="message" name="message" required></textarea>
+                
+                <label for="refer">How did you hear about us?</label><br>
+                <select id="refer" name="refer">
+                  <option value="friends">Friends</option>
+                  <option value="events">Events</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="internet">Internet Search</option>
+                  <option value="other">Other</option>
+                </select><br>
+                    
+                <input type="submit" value="Submit">
+<!--                </fieldset>-->
+            </form>
+             
+                
+         </section>      
+      
+    
+       <aside id="map">
+         <h2>Google Map</h2>
+            <div class='embed-container'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.487568411317!2d-122.30609648430203!3d47.48041437917653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54904311ff8466d3%3A0x595e56225b136c9d!2sSeaTac+Community+Center!5e0!3m2!1sen!2sus!4v1552772036089" width="600" height="450" style="border:0" allowfullscreen></iframe>
+           </div>
+        </aside>
+           
+     
+<footer>
+        SeaTac Rapier School | 13735 24th Ave S, SeaTac, WA 98168 | (206) 973-4680 <br />
+        <small>
+        &copy; 2018 by <a href="contact.php">Liyun Cecil</a>, All Rights Reserved ~ 
+        <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML ~</a> 
+        <a href="https://validator.w3.org/#validate_by_uri" target="_blank">Valid CSS</a><br />
+        <a href="disclaimer.html">Disclaimer</a>
+        </small>
+</footer>  
+          
+</div>
+    
+   
+</body>
+</html>
